@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saharia.notesell">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Notesell">
+        <activity
+            android:name=".Activities.LibraryViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.GotoLibraryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.QuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ViewpdfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PdfEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PdflistUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DocumentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_VcJFvZipiUJ2uM" />
+    </application>
+
+</manifest>

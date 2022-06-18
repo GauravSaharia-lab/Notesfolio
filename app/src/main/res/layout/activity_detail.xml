@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DetailActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/pdfimg"
+            android:layout_width="110dp"
+            android:layout_height="148dp"
+            android:background="@drawable/pdf">
+
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/titileDT"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/pdfimg"
+            android:maxLines="1"
+            android:text="Book Title" />
+
+        <TextView
+            android:id="@+id/desDT"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titileDT"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/pdfimg"
+            android:maxLines="2"
+            android:text="Description" />
+
+        <TextView
+            android:id="@+id/viewsTv"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titileDT"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="80dp"
+            android:layout_toEndOf="@+id/pdfimg"
+            android:maxLines="1"
+            android:text="views" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/read_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="293dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="86dp"
+        android:text="Preview"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/read_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="28dp"
+        android:text="Add to fav"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buy_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="202dp"
+        android:text="Buy"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buy_id"
+        android:layout_alignBottom="@+id/buy_id"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Price"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>

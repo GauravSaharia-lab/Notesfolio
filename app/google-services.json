@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1036358295806",
+    "project_id": "notesell",
+    "storage_bucket": "notesell.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036358295806:android:a79f1bd9eb6236012e05af",
+        "android_client_info": {
+          "package_name": "com.saharia.notesell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036358295806-efo0ldrmu06l1rhu92p0d4ea1drd1hnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoVlMmthRrkfJhy2TOcplGtrLR1_7KDvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036358295806-efo0ldrmu06l1rhu92p0d4ea1drd1hnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
